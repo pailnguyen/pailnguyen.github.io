@@ -1,0 +1,213 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Lato:700|Open+Sans);
+
+/*General*/
+html {
+	height: 100%;
+	background-attachment: fixed;
+	background-image: url(../images/pinata_blur.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow-y: scroll;
+}
+body {
+	border-top: 5px solid gray;
+	box-sizing: border-box;
+	color: black;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1rem;
+	margin: 0 auto;
+}
+a {
+	color: black;
+	transition: color 0.25s;
+}
+a:link {
+	font-weight: normal;
+}
+a:visited {
+
+}
+a:hover {
+	background: lightgoldenrodyellow;
+	color: darkslategray;
+}
+a:active {
+
+}
+audio {
+	display: table;
+	margin: 0 auto;
+}
+code {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	color: white;
+	padding: 0.5em;
+}
+code a {
+	color: white;
+	text-decoration: none;
+}
+code a:hover {
+	background: transparent;
+	color: white;
+}
+footer {
+	display: table;
+	font-size: 0.75em;
+	margin: 2em 0;
+	padding-bottom: 2em;
+	text-align: center;
+	width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: Lato, sans-serif;
+	font-weight: normal;
+	margin: 1rem 0rem;
+	text-align: left;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.833em;
+}
+h3 {
+	font-size: 1.667em;
+}
+h4 {
+	font-size: 1.5em;
+}
+h5 {
+	font-size: 1.333em;
+}
+h6 {
+	font-size: 1.167em;
+}
+header {
+	padding: 2em 1em 0;
+	overflow: hidden;
+}
+hr {
+	background-color: black;
+	height: 1px;
+	margin: 0;
+}
+iframe {
+	min-width: 100%;
+}
+img {
+	float: none;
+	margin: 0;
+	max-width: 100%;
+	text-align: center;
+}
+li {
+	
+}
+p {
+	margin: 0;
+	text-align: left;
+}
+table, th, td {
+	border: 1px solid black;
+	text-align: center;
+}
+table {
+	margin-left: 15%;
+	width: 70%;
+}
+th, td {
+	padding: 0.25em;
+}
+tr th {
+	background: lightslategray;
+	color: white;
+}
+tr:hover {
+	background: lightgoldenrodyellow;
+}
+ul {
+	margin: 0;
+}
+
+/*Class-specific*/
+.container {
+	background-attachment: fixed;
+	background-image: url(../images/pinata_blur_overlay.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0px auto;
+	max-width: 60em;
+	min-height: 100%;
+	position: relative;
+	width: 100%;
+}
+.content {
+	margin: 0 auto;
+	padding: 0 1em 2rem;
+	min-height: 300px;
+}
+.menu {
+	float: right;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	text-transform: lowercase;
+}
+.menu a:link {
+	text-decoration: none;
+}
+.menu > li {
+	display: inline;
+	font-size: 1em;
+	line-height: 4em;
+	padding-left: 0.2rem;
+	padding-right: 0;
+}
+.name {
+	float: left;
+	font-family: Lato, sans-serif;
+	font-size: 3em;
+	font-weight: normal;
+	text-align: center;
+}
+.name a:link {
+	text-decoration: none;
+}
+
+/*Media queries*/
+/*Mobile*/
+@media only screen and (max-width: 667px) {
+	html {
+		background-image: url(../images/pinata_blur_overlay.jpg);
+	}
+	iframe {
+		max-width: 350px;
+	}
+	table {
+		margin-left: 5%;
+		width: 90%;
+	}
+	.container {
+		box-shadow: none;
+		max-width: 100%;
+	}
+	.menu {
+		float: none;
+	}
+	.menu > li {
+		line-height: 2rem;
+		padding-left: 0.1rem;
+		padding-right: 0.1rem;
+	}
+	.name {
+		float: none;
+		font-size: 3rem;
+		text-align: center;
+	}
+}
