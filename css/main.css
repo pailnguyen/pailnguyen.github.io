@@ -1,11 +1,11 @@
 @charset "utf-8";
-@import url(http://fonts.googleapis.com/css?family=Lato:700|Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Inconsolata:400|Lato:700|Open+Sans);
 
 /*General*/
 html {
 	height: 100%;
 	background-attachment: fixed;
-	background-image: url(../images/pinata_blur.jpg);
+	/*background-image: url(../images/pinata_blur.jpg);*/
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -136,7 +136,7 @@ ul {
 /*Class-specific*/
 .container {
 	background-attachment: fixed;
-	background-image: url(../images/pinata_blur_overlay.jpg);
+	/*background-image: url(../images/pinata_blur_overlay.jpg);*/
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -149,7 +149,7 @@ ul {
 .content {
 	margin: 0 auto;
 	padding: 0 1em 2rem;
-	min-height: 300px;
+	min-height: 240px;
 }
 .menu {
 	float: right;
@@ -180,11 +180,71 @@ ul {
 	text-decoration: none;
 }
 
+.title {
+	text-align: center;
+}
+.tagline {
+	font-family: Inconsolata, Consolas, monospace;
+	font-size: 1.5em;
+	text-align: left;
+}
+.before-typed, .typed-element {
+	display: inline;
+}
+.typed-element > hr {
+	display: none;
+}
+.typed {
+	background-color: black;
+	color: white;
+	text-shadow: 1px 1px 10px gray;
+	min-height: 240px;
+	border-radius: 10px;
+	padding: 1em;
+	transition: height 0.5s ease-in;
+}
+/*.typed:hover {
+	height: 480px;
+}*/
+/*Typed.js*/
+.typed-cursor{
+	opacity: 1;
+	-webkit-animation: blink 1s infinite;
+	-moz-animation: blink 1s infinite;
+	animation: blink 1s infinite;
+}
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+
 /*Media queries*/
+/*Typed*/
+@media only screen and (max-width: 900px) {
+	.typed-element {
+		font-size: 0.75em;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.typed-element {
+		font-size: 0.6em;
+	}
+}
 /*Mobile*/
 @media only screen and (max-width: 667px) {
 	html {
-		background-image: url(../images/pinata_blur_overlay.jpg);
+		/*background-image: url(../images/pinata_blur_overlay.jpg);*/
 	}
 	iframe {
 		max-width: 350px;
