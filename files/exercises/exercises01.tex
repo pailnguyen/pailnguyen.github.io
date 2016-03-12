@@ -1,0 +1,127 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[margin=1in]{geometry}
+
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{subfig}
+\usepackage{verbatim}
+\usepackage[utf8]{inputenc}
+% \usepackage[default]{sourcecodepro}
+\usepackage{mathpazo}
+% \usepackage{heuristica} % old-style figures
+\usepackage[utopia,vvarbb,bigdelims]{newtxmath}
+
+\usepackage{helvet} % to match R plots
+
+\usepackage{xcolor}
+
+\usepackage{minted}
+\usemintedstyle{solarizedlight}
+\definecolor{bg}{RGB}{253,246,227} % background color
+\usepackage{inconsolata}
+
+\setlength\parindent{0pt}
+
+\title{Exercises $\cdot$ 01}
+\author{\textit{Fundamentals of Python (Aptamer Stream)}}
+\date{\textit{Spring 2016}}
+
+\begin{comment} % from the verbatim package
+
+% Figures
+
+\refstepcounter{figure}
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figure_file}
+	
+\sffamily\textbf{Figure \ref{fig:figlabel}}: Descriptions
+\label{fig:figlabel}
+\end{figure}
+
+% Side-by-side figures
+\refstepcounter{figure}
+\begin{figure}
+\centering
+\sffamily
+
+\subfloat[Scatterplot of meal prices vs. food rating ($r$ = 0.525).]{\includegraphics[width=.45\textwidth]{foodScore}} 
+\hfill
+\subfloat[Scatterplot of meal prices vs. atmosphere rating ($r$ = 0.219).]{\includegraphics[width=.45\textwidth]{feelScore}}
+\linebreak
+
+\sffamily\textbf{Figure \ref{fig:scatterplots}}: Scatterplot of meal prices vs. ratings.
+\label{fig:scatterplots}
+\end{figure}
+
+% Tables
+
+\refstepcounter{table}
+\begin{table}
+\centering
+\textsf{\textbf{Table \ref{tab:lollapalooza}}: Table representing the counts of bands that attended Lollapalooza between 2008 and 2011.}
+\linebreak
+
+\begin{tabular}{l*{2}{r}}
+	\hline
+	& \multicolumn{2}{c}{Lollapalooza} \\
+	& Did Not Attend ($n = 800$) & Attended ($n = 438$)\\
+	\hline
+	Did Not Attend ACL & 719 & 361 \\
+	Attended ACL       & 81  & 77 \\
+	\hline
+\end{tabular}
+
+\label{tab:lollapalooza}
+\end{table}
+
+% Math
+
+Here, we see that the relative risk of a band attending ACL for bands that attended Lollapalooza is
+
+\[\text{Relative risk} = \frac{77/(77+361)}{81/(81+719)} = \frac{77/438}{81/800} = 1.736\]
+
+\noindent indicating that a band that attends Lollapalooza is 1.736 times more likely to attend ACL that year than a band that does not attend Lollapalooza.
+
+% Minted
+
+\inputminted[bgcolor=bg,linenos,obeytabs=true,samepage=true,tabsize=4]{python}{src01/test.py}
+
+\end{comment}
+
+\begin{document}
+\maketitle
+\textit{For each problem, example input is on the line starting with \texttt{>{>}>}, with expected output for that input shown on the next line. Difficulty levels for the exercises below are estimates, ranging from easier ($\star$) to harder ($\star\star\star$). Advanced problems ($\oplus$) are optional, and may require you to read ahead on your own. You may work with others to complete these exercises, but you should try tackling the problems alone first. Additionally, you should type up your programs independently (i.e., please don't copy and paste from anyone/anywhere) and be prepared to answer questions about how your program works in case I ask you to explain the logic. This is for your own benefit!}
+
+
+\section{\upshape Combining DNA sequences $\bigstar$}
+Imagine that you receive two DNA sequence parts that should be considered as one sequence. Your job is to \emph{concatenate} the parts into one sequence. Your program should allow the user to input two strings (entered one at a time); the program should then print out the combined string after the user submits his/her input. Bonus: figure out how to let the user enter both sequence parts in one go (i.e., one part, followed by a space, followed by the other part).
+
+\texttt{Enter the first sequence part: ATCGTTAACGTT}
+\texttt{GATCGTACTAGC}
+
+\texttt{ATCGTTAACGTTGATCGTACTAGC}
+
+\section{\upshape Calculating GC content $\bigstar\bigstar$}
+Write a program that will allow the user to input four integers; these are the counts of adenine, guanine, cytosine, and thymine found on a DNA molecule (the counts will be input in that order). \emph{GC content} is the percentage of nucleobases on a DNA molecule that are guanine or cytosine. Knowing this, you should be able to have your program print out the GC content of this molecule.
+
+\texttt{>{>}> 2 3 4 5}
+
+\texttt{The GC content is 50\%.}
+
+\section{\upshape Counting DNA nucleotides $\bigstar\bigstar$}
+
+
+% \renewcommand{\theFancyVerbLine}{
+%   \sffamily\textcolor[rgb]{0.5,0.5,0.5}{\scriptsize\arabic{FancyVerbLine}}}
+
+
+
+
+
+\section{\upshape Problem 3 Name $\bigstar\bigstar\bigstar$}
+
+\section{\upshape Problem Advanced Name $\bigoplus$}
+
+\end{document}

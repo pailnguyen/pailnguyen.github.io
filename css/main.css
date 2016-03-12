@@ -16,7 +16,7 @@ body {
 	border-top: 5px solid gray;
 	box-sizing: border-box;
 	color: black;
-	font-family: "Open Sans", sans-serif;
+	font-family: -apple-system, "Open Sans", sans-serif;
 	font-size: 1rem;
 	margin: 0 auto;
 }
@@ -175,12 +175,15 @@ ul {
 	justify-content: space-around;
 }
 
-.flex-gallery > div {
+.flex-gallery-item {
 	width: 250px;
 	height: 250px;
 	overflow: hidden;
 }
-
+.figure-name {
+	font-family: Lato, sans-serif;
+	font-weight: bold;
+}
 .menu {
 	float: right;
 	list-style-type: none;
