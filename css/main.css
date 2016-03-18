@@ -13,6 +13,7 @@ html {
 	overflow-y: scroll;
 }
 body {
+    background-color: #ffffff;
 	border-top: 5px solid gray;
 	box-sizing: border-box;
 	color: black;
@@ -59,18 +60,22 @@ figcaption {
 	position: absolute;
 	background-color: rgba(255,255,255,0.9);
 	width: 100%;
-	height: 40px;
+	height: 50px;
 	bottom: 0px;
 	line-height: 40px;
 	text-align: center;
+/*
 	border: 1px solid black;
 	box-sizing: border-box;
+*/
 }
 figure {
 	position: relative;
 	margin: 0;
 	width: 100%;
 	height: 100%;
+    -webkit-clip-path: circle(48% at center);
+    clip-path: circle(50% at center);
 }
 footer {
 	display: table;
@@ -90,19 +95,19 @@ h1 {
 	font-size: 2em;
 }
 h2 {
-	font-size: 1.833em;
+	font-size: 1.83333em;
 }
 h3 {
-	font-size: 1.667em;
+	font-size: 1.66667em;
 }
 h4 {
 	font-size: 1.5em;
 }
 h5 {
-	font-size: 1.333em;
+	font-size: 1.33333em;
 }
 h6 {
-	font-size: 1.167em;
+	font-size: 1.16667em;
 }
 header {
 	padding: 2em 1em 0;
