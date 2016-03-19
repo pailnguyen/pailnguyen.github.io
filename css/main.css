@@ -181,7 +181,6 @@ ul {
 	flex-flow: row wrap;
 	justify-content: space-around;
 }
-
 .flex-gallery-item {
     border-radius: 50px;
 	width: 250px;
@@ -284,9 +283,6 @@ ul {
 }
 /*Mobile*/
 @media only screen and (max-width: 667px) {
-	html {
-		/*background-image: url(../images/pinata_blur_overlay.jpg);*/
-	}
 	iframe {
 		max-width: 350px;
 	}
