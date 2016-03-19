@@ -4,12 +4,12 @@ count_G = 0
 count_C = 0
 count_T = 0
 
-for base in seq: # loop through all the bases in the sequence
-    if base == "A": # if we find an A
+for base in seq:     # loop through all the bases in the sequence
+    if base == "A":  # if we find an A
         count_A += 1 # then update our count of A's
-    if base == "G":
-        count_G += 1
-    if base == "C":
+    if base == "G":  # if we find a G
+        count_G += 1 # then update our count of G's
+    if base == "C":  # etc...
         count_C += 1
     if base == "T":
         count_T += 1
