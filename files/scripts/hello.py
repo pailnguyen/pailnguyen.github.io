@@ -1,10 +1,8 @@
-bases = ["A", "C", "G", "T"]
-bases_len = len(bases)
-seq = "ACGCTGATCGTGTCATGCAT"
-rev_comp = ""
+vowels = ["A", "E", "I", "O", "U"]
 
-for base in seq:
-    rev_comp += bases[bases_len - 1 - bases.index(base)]
-
-rev_comp = rev_comp[::-1]
-print(rev_comp)
+string = "facetiously"
+vowel_count = 0
+for char in string.upper():
+	if char in vowels:
+		vowel_count += 1
+print("The number of vowels is: " + str(vowel_count))
