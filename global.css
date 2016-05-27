@@ -1,0 +1,468 @@
+/*
+Colors - Unofficial
+#cb7105
+#f7941e
+#ffbf73
+*/
+
+@charset "utf-8";
+
+/*Global container class*/
+
+.container {
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size: 110%;
+	margin: 0px auto;
+	max-width: 1200px;
+	min-height: 100%;
+	position: relative;
+	width: 100%;
+}
+
+/*General*/
+
+html {
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+body {
+    background-color: #ffffff;
+	background: url("http://ellingtonlab.org/assets/confectionary.png");
+	border-top: 5px solid #f7941e;
+	box-sizing: border-box;
+	color: #000000;
+	font-family: -apple-system, "Helvetica Neue", Roboto, Arial, sans-serif;
+	font-size: 1rem;
+	margin: 0 auto;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	transition: all 0.2s;
+	position: relative;
+}
+a {
+	color: #000000;
+	height: 100%;
+	text-decoration: underline;
+	transition: all 0.2s;
+}
+
+a:link {
+}
+a:visited {
+
+}
+a:hover {
+	background: #ffd098;
+	transition: all 0.2s;
+}
+menu a:hover {
+	background: #ffbf73;
+	transition: all 0.2s;
+}
+a:active {
+
+}
+blockquote {
+
+}
+/*
+blockquote:before {
+	content: open-quote;
+}
+blockquote:after {
+	content: close-quote;
+}
+*/
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+footer {
+	text-align: center;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	/*margin: 1rem 1rem;*/
+	margin: 1rem 0;
+	text-align: left;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.83333em;
+}
+h3 {
+	font-size: 1.66667em;
+}
+h4 {
+	font-size: 1.5em;
+}
+h5 {
+	font-size: 1.33333em;
+}
+h6 {
+	font-size: 1.16667em;
+}
+header {
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	top: 0;
+	width: 100%;
+}
+hr {
+	background-color: black;
+	height: 1px;
+	margin: 0;
+}
+iframe {
+	display: block;
+	margin: 0 auto;
+	height: 500px;
+	width: 95%;
+}
+img {
+	max-width: 100%;
+}
+li {
+
+}
+nav {
+/*
+	-webkit-position: sticky;
+	position: sticky;
+*/
+	background-color: #f7941e;
+/*	border-top: 2px solid #cb7105;
+	border-bottom: 1px solid #cb7105;*/
+	color: #ffffff;
+	transform: translate3d(0, 0, 0);
+/*	hack for iOS 9 to fix sticky nav paint*/
+}
+p {
+	/*margin: 1em 1em;*/
+	margin: 1em 0;
+	line-height: 1.5em;
+	text-align: left;
+}
+
+ul {
+	list-style-type: none;
+	/*margin: 0 1em;*/
+	margin: 0;
+	padding: 0;
+}
+
+/*Class-specific*/
+
+.content {
+/*	padding-top: 12.4em;*/
+
+	min-height: 200px;
+	position: relative;
+}
+.flex {
+	display: flex;
+	flex-flow: row wrap;
+}
+.header-top {
+	background-color: rgba(255, 255, 255, 0.75);
+	background-blend-mode: soft-light;
+	background-position: center;
+	padding-top: 3em;
+	padding-bottom: 1em;
+}
+.hero {
+	display: table;
+	background: url(http://ellingtonlab.org/assets/AndyEllington-1.jpg);
+	background-color: rgba(0, 0, 0, 0.5);
+	background-blend-mode: soft-light;
+	background-attachment: fixed;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	height: 16em;
+	width: 100%;
+	transition: all 0.2s;
+	z-index: 1;
+}
+.hero-quote-wrapper {
+	display: table-cell;
+	vertical-align: middle;
+}
+.hero-quote {
+	color: #ffffff;
+	text-shadow: 0 0 15px #000000;
+	border-left: 10px solid #f7941e;
+	font-size: 3em;
+	font-weight: bold;
+	margin: 0 auto;
+	max-width: 900px;
+	padding: 0.5em 1em;
+/*	quotes: "\201C""\201D""\2018""\2019";*/
+	text-align: center;
+	transition: all 0.2s;
+}
+.info {
+	background: url("http://ellingtonlab.org/assets/confectionary.png");
+/*	margin-top: 32.2em;*/
+	position: relative;
+	z-index: 2;
+	transition: all 0.2s;
+}
+.left, .right {
+	float: left;
+	width: 50%;
+	transition: all 0.2s;
+}
+.logo {
+	display: block;
+	height: 5rem;
+	margin: 0em auto;
+	transition: all 0.2s;
+}
+.logo-link {
+	position: relative;
+/*	fix later*/
+}
+a.logo:hover {
+	background-color: none;
+}
+.member {
+	display: inline-block;
+	margin: 0px auto;
+	max-width: 1200px;
+	min-height: 100%;
+	width: 100%;
+}
+.member-image {
+	float: right;
+	width: 250px;
+	margin-left: 1em;
+	transition: all 0.2s;
+}
+.member-info {
+	text-align: left;
+/*	margin-left: 1em;*/
+}
+.member-name {
+	font-weight: bold;
+	font-size: 1.25em;
+	margin: 0.25em 0;
+	text-align: left;
+}
+.member-desc {
+	line-height: 1.5em;
+	text-align: left;
+}
+.menu {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	font-weight: bold;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	text-transform: lowercase;
+}
+a.menu-item {
+	box-shadow: inset 0 0 0 0px #000000;
+	color: #ffffff;
+	display: block;
+	flex-grow: 1;
+	font-size: 1.25rem;
+	font-weight: bold;
+	line-height: 3rem;
+	min-width: 7em;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+a.menu-item:last-child {
+}
+.menu-item:hover {
+	box-shadow: inset 0 0 0 5px #000000;
+	color: #000000;
+	transition: all 0.2s;
+}
+
+.sticky {
+/*
+	background-color: rgba(0, 0, 0, 0.75);
+	border-top: 2px solid rgba(0, 0, 0, 0.75);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+*/
+	position: fixed;
+	top: 0;
+	z-index: 3;
+	width: 100%;
+	
+}
+
+.sticky a {
+	height: 3rem;
+	transition: 0.2s all;
+}
+
+/*Squarespace*/
+.sqs-layout:not(.sqs-editing) .sqs-row .sqs-block:not(.float):first-child {
+	padding-top: 17px;
+}
+/* .bibChart {
+	margin-top: 1em;
+} */
+a.active-link {
+	background: #ffbf73;
+	color: #000000;
+}
+
+.sqs-layout > .sqs-row {
+	margin: 0;
+}
+
+.post-meta, .title, .author-date > p {
+	text-align: center;
+}
+
+.sqs-simple-like {
+	width: 100px;
+}
+
+.sqs-simple-like .like-icon {
+	height: 50px;
+	width: 50px;
+	background: #cecece;
+	margin: 0px;
+	float: left;
+	position: relative;
+	left: 25px;
+}
+
+.like-icon::after {
+	color: #ffffff;
+	content: "❤";
+	font-size: 2em;
+	line-height: 1.55em;
+}
+
+.like-count {
+	float: left;
+	position: relative;
+	width: 100px;
+}
+
+.icon-share {
+	display: none;
+}
+
+.counts {
+	display: none;
+}
+
+a.icon-heart:hover {
+	background: none;
+}
+
+.pagination {
+	background: none;
+	border: none;
+	color: #000000;
+	font-size: 2em;
+	line-height: 2em;
+	text-align: center;
+}
+.next-title::before {
+	content: "\00a0/\00a0\00a0";
+}
+.sqs-block-image .sqs-image-caption p, .sqs-block-image .image-caption p {
+	font-size: 1em;
+		text-align: center;
+}
+/*Media queries*/
+/*Mobile*/
+
+@media only screen and (max-width: 1100px) {
+	.hero-quote {
+		margin: 1rem;
+		transition: all 0.2s;
+	}
+}
+@media only screen and (max-width: 875px) {
+	body {
+		font-size: 80%;
+	}
+	.hero-quote {
+		font-size: 2em;
+		transition: all 0.2s;
+	}
+	h1, h2, h3, h4, h5, h6 {
+/*		margin: 0.8rem 0.8rem;*/
+	}
+	.container {
+		max-width: 100%;
+	}
+	.hero {
+		background-size:auto;
+		height: 10em;
+		transition: all 0.2s;
+		display: table;
+		background-attachment: fixed;
+		background-position: top center;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		height: 12em;
+		width: 100%;
+		transition: all 0.2s;
+		z-index: 1;
+	}
+	.info {
+		transition: all 0.2s;
+	}
+	.left, .right {
+		width: 100%;
+		transition: all 0.2s;
+	}
+	.logo {
+		height: 4rem;
+		max-width: 90%;
+		margin: -1em auto 0em;
+		transition: all 0.2s;
+	}
+	.member-image {
+		width: 150px;
+		transition: all 0.2s;
+	}
+	a.menu-item {
+		font-size: 1rem;
+		line-height: 2rem;
+		min-width: 7em;
+		transition: all 0.2s;
+	}
+	
+	.sticky a {
+		height: 2rem;
+		transition: 0.2s all;
+	}
+
+	.like-icon::after {
+		font-size: 2em;
+		line-height: 1.9em;
+	}
+	
+}
