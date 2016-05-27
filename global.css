@@ -342,6 +342,7 @@ a.active-link {
 
 .sqs-simple-like {
 	width: 100px;
+	display: none;
 }
 
 .sqs-simple-like .like-icon {
